@@ -1,0 +1,14 @@
+name: Bienvenida!
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  saludo_job:
+    runs-on: linux
+    steps:
+      - name: Saludar
+        run: |
+          echo "Hola Github Actions!!!"
